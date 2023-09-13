@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; // BrowserRouter'ı Router olarak da kullanabilirsiniz
-import './index.css';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'; 
 import Login from './Pages/Login';
 import App from './App';
 import DivList from './components/DivList';
