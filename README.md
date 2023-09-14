@@ -84,10 +84,12 @@ In "About Us" page, user can see suppliers company work with.
 
 # Requirements and Installation:
 There are the following requirements to run the project:
+<ul>
+  <li>Node.js must be installed.</li>
+  <li>'npm install' command can be used to install dependencies.</li>
+  <li>PostgreSQL is used for database setup.</li>
+</ul>
 
--Node.js must be installed.
--'npm install' command can be used to install dependencies.
--PostgreSQL is used for database setup.
 
 
 
