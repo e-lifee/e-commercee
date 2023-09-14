@@ -222,7 +222,7 @@ app.post("/orders/create", async (req, res) => {
         const employeeResult = await pool.query(randomEmployeeQuery);
         const employee_id = employeeResult.rows[0].employee_id;
 
-        //Get id of the last order and assign +1 to new order(order_id must be assigned by the db, so I(e-life!) added 1)
+        //Get id of the last order and assign +1 to new order(order_id must be assigned by the db, so I added 1)
         const maxOrderIdQuery = "SELECT MAX(order_id) as max_order_id FROM orders";
         const maxOrderIdResult = await pool.query(maxOrderIdQuery);
         const nextOrderId = maxOrderIdResult.rows[0].max_order_id + 1;

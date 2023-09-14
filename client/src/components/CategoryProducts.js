@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import {AiOutlineHeart} from 'react-icons/ai'
+
 function ProductList({ categoryId }) {
+
     const [products, setProducts] = useState([]);
     const [addedProducts, setAddedProducts] = useState([]);
     const [favorites, setFavorites] = useState([])
@@ -75,7 +77,9 @@ function ProductList({ categoryId }) {
                             <td>
                                 <button
                                     onClick={() => addToCart(product)}
-                                    className={`btn ${addedProducts.includes(product.product_id) ? 'btn-success' : 'btn-primary'}`}
+                                    className={`btn ${addedProducts.includes(product.product_id)
+                                         ? 'btn-success' 
+                                         : 'btn-primary'}`}
                                 >
                                     {addedProducts.includes(product.product_id) ? 'Added' : 'Add to Cart'}
                                 </button>
