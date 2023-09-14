@@ -75,18 +75,7 @@ function OrderForm({ onSubmit }) {
 
       if (response.status === 201) {
         navigate('/payment')
-        /* console.log("Order placed successfully");
-        cartItems.forEach(async (cartItem) => {
-          try {
-            const deleteProduct = await fetch(`http://localhost:5000/cart/${cartItem.cart_id}`, {
-              method: "DELETE"
-            });
-          } catch (error) {
-            console.log(error.message);
-          }
-        })
-        setCartItems([]);
-        setSuccessful("ORDER ADDED SUCCESSFULLY!..."); */
+        
       } else {
         alert("Failed to place order");
       }
