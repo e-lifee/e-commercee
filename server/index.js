@@ -240,6 +240,16 @@ app.post("/orders/create", async (req, res) => {
     }
 });
 
+
+app.get('/orders',async(req,res)=>{
+    try {
+        const lastOrder=await pool.query("SELECT * FROM orders ORDER BY order_id DESC LIMIT 1")
+        res.json(lastOrder.rows)
+    } catch (error) {
+        console.error(error.message);
+      res.status(500).json({ message: "Server error" });
+    }
+})
 //post a user to users:
 app.post("/login", async (req, res) => {
     try {

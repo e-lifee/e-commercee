@@ -15,6 +15,8 @@ import CartForm from './Pages/CartForm';
 import Favorites from './Pages/Favorites';
 import SearchCategory from './Pages/SearchCategory';
 import Home from './Pages/Home';
+import CreditCards from './Pages/CreditCard';
+import OrderSuccess from './Pages/OrderSuccess';
 ReactDOM.render(
   <Router>
     <Navbar/>
@@ -28,6 +30,8 @@ ReactDOM.render(
       <Route path='/customerOrder' element={<Orders/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/form' element={<CartForm/>}/>
+      <Route path='/payment' element={<CreditCards/>}/>
+      <Route path='/ordersuccess' element={<OrderSuccess/>}/>
       <Route path='/favs' element={<Favorites/>}/>
       <Route path='/search' element={<SearchCategory/>}/>
     </Routes>

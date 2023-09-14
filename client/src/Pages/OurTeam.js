@@ -40,7 +40,6 @@ function OurTeam() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }

@@ -87,12 +87,6 @@ function Cart() {
         </div>
       </div>
       
-      <h2>Cart</h2>
-      <ul>
-        {Array.isArray(cartItems) && cartItems.map((item, index) => (
-          <li style={{ backgroundColor: 'orange' }} key={index}>{item.product}</li>
-        ))}
-      </ul>
 
     </div>
   );
