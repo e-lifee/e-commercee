@@ -46,7 +46,7 @@ const CreditCards = () => {
         getCart();
     }, []);
 
-    const handleSubmit=()=>{
+    const handleSubmit = () => {
         navigate('/ordersuccess')
     }
     return (
@@ -67,35 +67,67 @@ const CreditCards = () => {
                 name={data.name}
                 number={data.number}
             />
-            <form action="" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '20px', backgroundColor: 'red' }}>
+            <form action="" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
                 <input
                     type="number"
                     name="cvc"
                     placeholder="CVC"
                     onChange={handleInputChange}
-                    style={{ margin: '5px' }}
+                    style={{
+                        margin: '5px',
+                        padding: '10px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                        width: '20%',
+                        fontSize: '16px',
+                    }}
                 />
+
                 <input
                     type="date"
                     name="expiry"
                     placeholder="Expire Date"
                     onChange={handleInputChange}
-                    style={{ margin: '5px' }}
+                    style={{
+                        margin: '5px',
+                        padding: '10px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                        width: '20%',
+                        fontSize: '16px',
+                    }}
                 />
+
                 <input
                     type="text"
                     name="name"
                     placeholder="Your Name"
                     onChange={handleInputChange}
-                    style={{ margin: '5px' }}
+                    style={{
+                        margin: '5px',
+                        padding: '10px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                        width: '20%',
+                        fontSize: '16px',
+                    }}
                 />
+
                 <input
                     type="number"
                     name="number"
                     placeholder="Card Number"
                     onChange={handleInputChange}
-                    style={{ margin: '5px' }}
+                    style={{
+                        margin: '5px',
+                        padding: '10px',
+                        border: '1px solid #ccc',
+                        borderRadius: '5px',
+                        width: '20%',
+                        fontSize: '16px',
+                    }}
                 />
+
                 <button type="submit" style={{ backgroundColor: '#1e90ff', color: 'white', padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer', display: 'block', margin: '0 auto' }}>COMPLETE</button>
 
             </form>

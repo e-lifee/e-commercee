@@ -83,6 +83,7 @@ function Cart() {
           <button
             className='btn btn-warning'
             onClick={() => navigate('/form')}
+            disabled={cartItems.length === 0}
           >Confirm Cart</button>
         </div>
       </div>

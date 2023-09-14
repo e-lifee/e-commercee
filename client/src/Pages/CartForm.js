@@ -108,8 +108,7 @@ function OrderForm({ onSubmit }) {
           />
         </label>
         <label>Address:
-          <input
-            type="text"
+          <textarea
             name="shipAddress"
             value={shippingInfo.shipAddress}
             onChange={handleChange}
@@ -128,8 +127,7 @@ function OrderForm({ onSubmit }) {
           />
         </label>
         <label>Region:
-          <input
-            type="text"
+          <textarea
             name="shipRegion"
             value={shippingInfo.shipRegion}
             onChange={handleChange}

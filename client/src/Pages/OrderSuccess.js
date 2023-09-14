@@ -55,7 +55,8 @@ function OrderSuccess() {
     }, []);
     return (
         <div>
-            <h2>Order Placed Successfully...</h2>
+            <h2 style={{display:'flex',justifyContent:'center',alignItems:'center',color:'green'}}>Order Placed Successfully...</h2>
+            <hr style={{width:'50%',height:'10px', border: '0', borderTop: '5px dotted black'}}/>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <h2 style={{ textAlign: 'center' }}>Order Details</h2>
                 <ul style={{ listStyle: 'none', padding: 0, width: '40%', margin: '0 auto', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -65,9 +66,9 @@ function OrderSuccess() {
                 </ul>
                 <h2>Total Price: ${totalPrice}</h2>
             </div>
-            <div style={{backgroundColor:'black',display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                 {orderInfos.map((order) => (
-                    <div className="card" style={{ width: '25%', margin: "15px" }} key={order.order_id}>
+                    <div className="card" style={{ backgroundColor:'green', color:'white',width: '25%', margin: "15px",padding:'20px 20px' }} key={order.order_id}>
                         <h5>Customer ID: {order.customer_id}</h5>
                         <h5>ORDER DATE: {order.order_date}</h5>
                         <h5>ADDRESS: {order.ship_address}</h5>
@@ -79,7 +80,7 @@ function OrderSuccess() {
                 ))}
             </div>
 
-            <button onClick={handleButton}>HOME PAGE</button>
+            <button onClick={handleButton} style={{backgroundColor: '#1e90ff', color: 'white', padding: '10px', border: 'none', borderRadius: '5px', display: 'block', margin: '20px auto' }}>HOME PAGE</button>
         </div>
     )
 }
